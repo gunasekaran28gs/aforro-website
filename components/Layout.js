@@ -43,13 +43,22 @@ export default function Layout({ children }) {
 									className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
 								>
 									<li>
-										<a className="bold">Home</a>
+										<Link href="/">Home</Link>
 									</li>
 									<li>
-										<a>About Us</a>
+										<Link href="/about">About Us</Link>
 									</li>
 									<li>
-										<a>Careers</a>
+										<Link href="/careers">Careers</Link>
+									</li>
+									<li>
+										<Link href="/blogs">Blogs</Link>
+									</li>
+									<li>
+										<Link href="/privacy-policy">Privacy</Link>
+									</li>
+									<li>
+										<Link href="/terms-and-conditions">Terms</Link>
 									</li>
 								</ul>
 							</div>
