@@ -40,7 +40,12 @@ export default function Recipes({ blogs }) {
 						<div className="mt-12">
 							<h3 className="mb-5 text-2xl font-bold">Download App</h3>
 							<div className="flex gap-4 flex-row justify-center lg:flex-row ">
+              <a
+									href="https://play.google.com/store/apps/details?id=com.Aforro&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+									target="_blank"
+								>
 								<Image src="/google-play.png" width={150} height={350} alt="" />
+                </a>
 								<Image src="/apple-store.png" width={140} height={300} alt="" />
 							</div>
 						</div>
