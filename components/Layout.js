@@ -94,7 +94,7 @@ export default function Layout({ children }) {
 							</ul>
 						</div>
 						<div className="navbar-end">
-							<a className="btn bg-orange-500 text-white">Get App</a>
+							<a href="https://play.google.com/store/apps/details?id=com.Aforro" target="_blank" className="btn bg-orange-500 text-white">Get App</a>
 						</div>
 					</div>
 				</div>
