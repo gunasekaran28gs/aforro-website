@@ -49,6 +49,9 @@ export default function Layout({ children }) {
 										<Link href="/about">About Us</Link>
 									</li>
 									<li>
+										<Link href="/our-products">Our Productss</Link>
+									</li>
+									<li>
 										<Link href="/careers">Careers</Link>
 									</li>
 									<li>
@@ -78,6 +81,9 @@ export default function Layout({ children }) {
 								</li>
 								<li>
 									<Link href="/about">About Us</Link>
+								</li>
+								<li>
+									<Link href="/our-products">Our Productss</Link>
 								</li>
 								<li>
 									<Link href="/careers">Careers</Link>
