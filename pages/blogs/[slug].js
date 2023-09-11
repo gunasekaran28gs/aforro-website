@@ -8,6 +8,13 @@ const client = createClient({
 	accessToken: process.env.CONTENTFUL_ACCESS_KEY,
 });
 
+const options = {
+    renderNode: {
+        [BLOCKS.EMBEDDED_ASSET]: ({ data: { target: { fields }}}) =>
+		<div dangerouslySetInnerHTML={{__html:`<img src="${fields.file.url}" height="${fields.file.details.image.height}" width="${fields.file.details.image.width}" alt="${fields.description}"/>`}} />,
+    },
+};
+
 export const getStaticPaths = async () => {
 	const res = await client.getEntries({
 		content_type: "blogPost",
@@ -57,7 +64,7 @@ export default function RecipeDetails({ blog }) {
 				<h1>{title}</h1>
 			</div>
 			<div className="blog-article">
-				<div>{documentToReactComponents(blogContent)}</div>
+				<div>{documentToReactComponents(blogContent, options)}</div>
 			</div>
 
 			<style jsx>{`

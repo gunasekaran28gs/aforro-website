@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
+import Script from "next/script";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 
 export default function Layout({ children }) {
@@ -15,9 +16,41 @@ export default function Layout({ children }) {
 					href="/icon.ico"
 					type="image/<generated>"
 				/>
-			</Head>
 
+			</Head>
+			<Script async src="https://www.googletagmanager.com/gtag/js?id=G-Q1WXEZPZLH"></Script>
+			<Script id="google-analytics">
+			{`
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments ); }
+				gtag('js', new Date());
+
+				gtag('config', 'G-Q1WXEZPZLH');
+			`}
+			</Script>
+			<Script async src="https://www.googletagmanager.com/gtag/js?id=AW-11280915884"></Script>
+			<Script id="google-ads">
+			{`
+				window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+
+				gtag('config', 'AW-11280915884');
+			`}
+			</Script>
+			<Script id="google-tag-manager">
+			{`
+				(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+				j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+				'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+				})(window,document,'script','dataLayer','GTM-NB47M3RX');
+			`}
+				
+			</Script>
 			<header>
+			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB47M3RX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 				<div className="shadow">
 					<div className="navbar p-3  bg-base-100  container mx-auto">
 						<div className="navbar-start ">
