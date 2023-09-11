@@ -50,7 +50,7 @@ export default function Layout({ children }) {
 			</Script>
 			<header>
 			<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NB47M3RX"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+height="0" width="0" style={{display:'none', visibility:'hidden'}}></iframe></noscript>
 				<div className="shadow">
 					<div className="navbar p-3  bg-base-100  container mx-auto">
 						<div className="navbar-start ">
