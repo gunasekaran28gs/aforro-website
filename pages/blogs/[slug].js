@@ -1,6 +1,7 @@
 import { createClient } from "contentful";
 import Image from "next/image";
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
+import { BLOCKS } from '@contentful/rich-text-types';
 import Head from "next/head";
 
 const client = createClient({
